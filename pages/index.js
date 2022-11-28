@@ -149,17 +149,17 @@ export default function Home({ data }) {
             <b>Mobile number:</b>
           </label>
           <input type='text' onChange={(e) => setPhoneNumber(e.target.value)} />
-        </div>
 
-        <button
-          onClick={
-            category == 'vend_data'
-              ? (e) => purchaseData(e)
-              : (e) => purchaseAirtime(e)
-          }
-        >
-          Continue
-        </button>
+          <button
+            onClick={
+              category == 'vend_data'
+                ? (e) => purchaseData(e)
+                : (e) => purchaseAirtime(e)
+            }
+          >
+            Continue
+          </button>
+        </div>
       </main>
     </div>
   );
